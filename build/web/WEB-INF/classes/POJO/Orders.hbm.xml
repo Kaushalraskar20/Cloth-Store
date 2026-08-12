@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="POJO.Orders"
+           table="orders"
+           catalog="cloth_store">
+
+        <id name="orderId" type="java.lang.Integer">
+
+            <column name="order_id"/>
+
+            <generator class="identity"/>
+
+        </id>
+
+        <property name="userId" type="java.lang.Integer">
+
+            <column name="user_id" not-null="true"/>
+
+        </property>
+
+        <property name="productId" type="java.lang.Integer">
+
+            <column name="product_id" not-null="true"/>
+
+        </property>
+
+        <property name="quantity" type="java.lang.Integer">
+
+            <column name="quantity" not-null="true"/>
+
+        </property>
+
+        <property name="price" type="double">
+
+            <column name="price" not-null="true"/>
+
+        </property>
+
+        <property name="totalAmount" type="double">
+
+            <column name="total_amount" not-null="true"/>
+
+        </property>
+
+        <property name="orderDate" type="java.util.Date">
+
+            <column name="order_date"/>
+
+        </property>
+
+        <property name="status" type="string">
+
+            <column name="status" length="30"/>
+
+        </property>
+
+    </class>
+
+</hibernate-mapping>

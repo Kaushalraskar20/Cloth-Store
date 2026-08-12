@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class
+        name="POJO.Cart"
+        table="cart"
+        catalog="cloth_store">
+
+        <id
+            name="cartId"
+            type="java.lang.Integer">
+
+            <column name="cart_id"/>
+
+            <generator class="identity"/>
+
+        </id>
+
+        <property
+            name="userId"
+            type="java.lang.Integer">
+
+            <column name="user_id"/>
+
+        </property>
+
+        <property
+            name="productId"
+            type="java.lang.Integer">
+
+            <column name="product_id"/>
+
+        </property>
+
+        <property
+            name="quantity"
+            type="java.lang.Integer">
+
+            <column name="quantity"/>
+
+        </property>
+
+    </class>
+
+</hibernate-mapping>
