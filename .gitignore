@@ -1,0 +1,22 @@
+# NetBeans
+/nbproject/private/
+/build/
+/dist/
+/.nb-gradle/
+
+# Compiled files
+*.class
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Server generated files
+target/
+
+# Logs
+*.log
